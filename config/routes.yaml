@@ -1,0 +1,12 @@
+read_user:
+    path: /read-user
+    controller: App\Controller\UserController::readUser
+update_user:
+    path: /update-user/{id}
+    controller: App\Controller\UserController::updateUser
+delete_user:
+    path: /delete-user/{id}
+    controller: App\Controller\UserController::deleteUser
+add_user:
+    path: /add-user
+    controller: App\Controller\UserController::testAdd

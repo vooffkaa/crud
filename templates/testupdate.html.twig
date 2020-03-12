@@ -1,0 +1,9 @@
+{% extends 'layout.html.twig' %}
+{% block content %}
+    <div class="form-group col-md-3">
+        {{ form_start(form, {'attr': {'id': 'user_form'}}) }}
+            {{ form_widget(form) }}
+        {{ form_end(form) }}
+    </div>
+    <a href="{{ path('read_user') }}"><i class="fas fa-undo-alt"> Go back to user list</i></a>
+{% endblock %}
